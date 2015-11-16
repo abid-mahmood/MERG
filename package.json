@@ -21,9 +21,9 @@
   },
   "scripts": {
     "clean": "rm -rf lib",
-    "watch-js": "./node_modules/.bin/babel src -d lib --experimental -w",
-    "server": "nodemon lib/server.js",
+    "watch-js": "./node_modules/.bin/babel ./src -d ./lib --experimental -w",
+    "server": "nodemon lib/index.js",
     "start": "npm run watch-js & npm run server",
-    "build": "npm run clean & ./node_modules/.bin/babel src -d lib --experimental"
+    "build": "npm run clean & ./node_modules/.bin/babel ./src -d ./lib --experimental"
   }
 }

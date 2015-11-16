@@ -1,5 +1,5 @@
 'use strict';
-require("babel/register");
+require("babel-core");
 require("./server.js");
 
 import express from "express";
@@ -9,6 +9,7 @@ let PORT = 3000;
 
 app.post('/graphql', (req, res) => {
   res.send("Hello");
+  console.log("Server started");
 })
 
 const server = app.listen(PORT, () => {
